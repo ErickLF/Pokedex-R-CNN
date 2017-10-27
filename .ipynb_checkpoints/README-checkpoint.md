@@ -14,3 +14,10 @@ ya que daremos las bases para que tu sigas los pasos y puedas hacer tu propio po
 
 De una imagen cualquiera ya sea indvidual, es decir donde aparzca un solo pokemon o una imagen grupal donde 
 aparzcan varios poder identificar los pokemones que aparecen en dicha imagen.
+
+## Recomendacion
+
+Este proyecto en principio se puede desarrollar en cualquier sistema operativo ya sea *Windows,Os o Linux* por
+experiencia propia te recomiendo que uses **Linux** y si no lo tienes te recomiendo que lo instales ya sea aciendo una
+particion en tu sistema operativo si es Windows. Ya que es mas fácil de instalar y ejectuar todos los 
+comandos necesarios presentados en esta página y por lo general para estos tipos de proyctos.
