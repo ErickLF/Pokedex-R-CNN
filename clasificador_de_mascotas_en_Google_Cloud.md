@@ -5,7 +5,7 @@ Object Detection API**.En este tutorial veremos como entrenar los datos de Oxfor
 para contruir un sistema que distinga entre varias razas de gatos y perros.
 La salida sera algo así como la siguiente:
 
-![](imgenes/oxford_pet.png)
+![](imagenes/oxford_pet.png)
 
 
 ## Configuración de un proyecto en Google Cloud
@@ -256,11 +256,11 @@ Una vez que corres este comando al irte a `localhost:6006` en tu navegador,
 en mi caso me teenia que ir a otra direccion pero no te preocupes
 ahi te dice a que direccion irte, podras ver en **SCALARES** algo así:
 
-![](imgagenes/graf_p.png)
+![](imagenes/graf_p.png)
 
 Tienes que irte a la pestaña de imagenes para ver algo así:
 
-![](imgagenes/muestra_ent.png)
+![](imagenes/muestra_ent.png)
 
 Nota: Esto puede tardar mucho tiempo para empezar a ver resultados en tu Tensorboard
 por lo general es a partir de las dos horas cuando empiezas a ver las imagenes y las
