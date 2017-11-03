@@ -55,8 +55,13 @@ Necesitamos subir los archivos:
 9. Ver el avance de tu entrenamiento
     ```tensorboard --logdir=gs://pokedexp```
     Al inicio:
+    paso 3 del entrenamiento
     ![paso 3 del entrenamiento](imagenes/pokedex_f.png)
+    
+    paso 12747 del entrenamiento
     ![paso 12747](imagenes/pokedex.png)
+    Aqui podemos ver que ya aprendiendo muy bien!
+    
 10. Experotar tu modelo para ello deberas seleccionar el checkpoint que mas te convenga en mi caso es ```182989```
     ```
     gsutil cp gs://pokedexp/train/model.ckpt-182989.* .
