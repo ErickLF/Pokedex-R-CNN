@@ -2,7 +2,7 @@
 
 Estamos cada vez mas cerca de tener nuestro propio identificador de pokemones.
 Para ello primero debemos de tener un dataset, en caso de querer utilizar tu propio dataset,
-te recomiendo que cheques la parte de [como hacer tu dataset](Crea_tu_propio_DataSet.md).
+te recomiendo que cheques la parte de [como hacer tu dataset](https://github.com/ErickLF/Pokedex-R-CNN/blob/master/Crea_tu_propio_DataSet.md).
 
 Bien una vez hecho tu dataset vamos a necesitar:
 
@@ -54,11 +54,16 @@ Necesitamos subir los archivos:
     ```
 9. Ver el avance de tu entrenamiento
     ```tensorboard --logdir=gs://pokedexp```
-10. Experotar tu modelo
-
+    Al inicio:
+    ![paso 3 del entrenamiento](imagenes/pokedex_f.png)
+    ![paso 12747](imagenes/pokedex.png)
+10. Experotar tu modelo para ello deberas seleccionar el checkpoint que mas te convenga en mi caso es ```182989```
+    ```
     gsutil cp gs://pokedexp/train/model.ckpt-182989.* .
     python object_detection/export_inference_graph.py \
     --input_type image_tensor \
     --pipeline_config_path object_detection/samples/configs/ssd_mobilenet_v1_pets.config \
     --trained_checkpoint_prefix model.ckpt-182989 \
     --output_directory Modelo_pokemon.pb
+    ```
+Listo ahora solo tienes que ir a la [libreta de pokemones](https://github.com/ErickLF/Pokedex-R-CNN/blob/master/prueba_pokedex.ipynb) para probarlo 
