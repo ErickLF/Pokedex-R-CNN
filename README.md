@@ -1,21 +1,55 @@
 # Pokedex 
-Proyecto para la materia de **Redes Neuronales**
+Este proyecto surge para la materia de **Redes Neuronales** en la Universidad de Sonora.
 
-Este un problema de deteccion de objetos en nuestro caso **Pokemones** donde identificaremos
-que tipo de pokemon es el que esta en una imagen dada y para ello utilizaremos algunas herramientas
-como el **API de Deteccion de Objetos de Tensorflow** y un poco de **Google Cloud**.
+El cual es un problema de detección de objetosel cual se puede aplicar a cualquier cosa (persona,animal) y
+en nuestro caso en particular seran **Pokemones** donde identificaremos en una imagen de la caricatura
+el nombre del pokemon y para ello utilizaremos algunas herramientas
+comolo son: 
+1. **API de Deteccion de Objetos de Tensorflow**
+2. **Google Cloud** para el entrenamiento.
 
-Ademas tomaremos como base un proyecto de github el cual lo puedes conseguir [aqui]((https://github.com/tensorflow/models))
+Tomando como referencia el proyecto de github el cual lo puedes conseguir [aqui](https://github.com/tensorflow/models)
+es muy importante, así que deberas descargarlo o clonarlo para tenerlo a la mano ya que es complementario a este
+proyecto ya que se requiere para el funcionamiento de este.
 
-Así que deberas descargarlo para hacer tus propias pruebas en tu computadora e ir a la par con este proyecto
-ya que daremos las bases para que tu sigas los pasos y puedas hacer tu propio pokedex.
+Una vez descargado podras probar este proyecto e inclusive te dejamos los pasos para que realices cualquier
+otro proyecto que desees incusive para que agregues mas pokemones a tu identificador.
+
 
 ## Objetivos
 
-De una imagen cualquiera ya sea indvidual, es decir donde aparzca un solo pokemon o una imagen grupal donde 
-aparzcan varios poder identificar los pokemones que aparecen en dicha imagen.
+El objetivo principal, ya mencionado previamente es: *De una imagen cualquiera ya sea indvidual, 
+es decir donde aparzca un solo pokemon o una imagen grupal donde 
+aparzcan varios poder identificar los pokemones que aparecen en dicha imagen en mi caso solo identificare a 4
+pokemones los cuales son: **"Pikachu, Bulbasaur, Charmander y Squirtle"** *.
 
-## Red Neuronal Convolucional Regional (R-CNN)
+## ¿Cómo funciona? 
+Funciona con una *Red Neuronal Convolucional basada en Region (R-CNN)*, pero entonces que es una R-CNN.
+
+Combina elementos de las tareas de de detección de objetos utilizando visión por computadora clásica, 
+donde el objetivo es clasificar objetos individuales y localizar cada uno usando un cuadro delimitador, 
+y segmentación semántica, donde el objetivo es clasificar cada píxel en conjunto fijo de categorías 
+sin diferenciar instancias de objeto.
+Sin embargo, mostramos que un sistema sorprendentemente simple, flexible y rápido puede superar los 
+resultados de segmentación de instancias anteriores.
+
+El enfoque basado en la región CNN (R-CNN) para la detección de objeto de cuadro delimitador es 
+atender a un número manejable de regiones de objeto candidatos y evaluar redes convolucionales 
+independientemente en cada región de interes (RoI).
+
+R-CNN se amplió para permitir la asistencia a RoI en mapas de características usando RoIPool, 
+lo que permite una velocidad más rápida y una mayor precisión.A esta ampliacion
+se le conoce como Faster R-CNN  es flexible y robusto para muchas mejoras de seguimiento, 
+y es el marco líder actual en varios puntos de referencia.
+
+![](imagenes/ej.)
+
+Para mañor informacion puedes consultar este [artículo](https://arxiv.org/pdf/1703.06870.pdf) muy bien explicado.
+
+Además para acelerar nuestro aprendizaje utilizamos *Objetos Comunes en Contexto* mas comunmente conocido como COCO
+para poder transferir el aprendizaje de un modelo ya definido a nuestro propio modelo, este modelo puede
+ser ya sea personas, animales, objetos, etc. 
+Tienen un amplio dataset ya definido.
 
 ## Recomendacion
 
