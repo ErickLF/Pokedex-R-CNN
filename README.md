@@ -42,7 +42,7 @@ lo que permite una velocidad más rápida y una mayor precisión.A esta ampliaci
 se le conoce como Faster R-CNN  es flexible y robusto para muchas mejoras de seguimiento, 
 y es el marco líder actual en varios puntos de referencia.
 
-![](imagenes/ej.)
+![](imagenes/ej.png)
 
 Para mañor informacion puedes consultar este [artículo](https://arxiv.org/pdf/1703.06870.pdf) muy bien explicado.
 
