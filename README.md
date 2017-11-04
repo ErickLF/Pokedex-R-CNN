@@ -29,12 +29,15 @@ comandos necesarios presentados en esta página y por lo general para estos tipo
 Estos resultados fueron obtenidos al final del entrenamiento:
 
 Un solo pokemon
+
 ![](imagenes/r3.png)
 
 Dos pokemones juntos
+
 ![](imagenes/r1.png)
 
 4 pokemones
+
 ![](imagenes/r2.png)
 
 
